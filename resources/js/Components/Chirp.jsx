@@ -1,4 +1,8 @@
 import React from 'react';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(relativeTime);
 
 export default function Chirp({ chirp }) {
     return (
